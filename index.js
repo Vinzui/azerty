@@ -21,6 +21,6 @@ io.on('connection', (socket) => {
 });
 
 var server_port = process.env.YOUR_PORT || process.env.PORT || 5000;
-http.listen(server_port, 'localhost', () => {
-    console.log('Started on http://localhost:' + server_port+'/view'  );
+server.listen(server_port, '0.0.0.0', () => {
+    console.log('Started on http://localhost:' + server_port + '/view');
 });
